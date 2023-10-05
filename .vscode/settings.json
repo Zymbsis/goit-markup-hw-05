@@ -1,3 +1,37 @@
 {
-  "liveServer.settings.port": 5502
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "window.zoomLevel": -1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "editor.fontSize": 17,
+  "files.autoSave": "afterDelay",
+  "workbench.preferredHighContrastLightColorTheme": "",
+  "liveServer.settings.port": 5500,
+  "git.autofetch": true,
+  "workbench.colorTheme": "",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "surround": "yellow"
+      }
+    }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap":"bounded",
+    "editor.wordWrapColumn": 80,
+    "html.format.wrapAttributes": "force-aligned"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "prettier.bracketSpacing": false,
+  "prettier.bracketSameLine": false,
+  "prettier.printWidth": 80
 }
