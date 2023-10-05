@@ -407,26 +407,21 @@ img {
 .footer-social {
   margin-right: 80px;
 }
-
 .subs-container {display: flex;
   margin-left: auto;
 }
-.subs-form {
-  display: flex;
-  gap: 24px;
-  align-items: flex-end;
-}
-.subs-wrap {
-  display: flex;
-  flex-direction: column;
-}
-.subs-label {
+.subs-text {
   margin-bottom: 16px;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.subs-form {
+  display: flex;
+  gap: 24px;
+  /* align-items: flex-end; */
 }
 .subs-input {
   width: 264px;
@@ -436,12 +431,12 @@ img {
   padding-left: 16px;
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   outline: transparent;
   color: #fff;
   font-size: 12px;
-  line-height: 0.2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
@@ -449,14 +444,13 @@ img {
 }
 input::placeholder {
   font-family: inherit;
-  color: currentColor;
+  color: #fff;
 } 
 .subs-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  width: 165px;
+  max-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border: none;
@@ -464,6 +458,7 @@ input::placeholder {
   background-color: #4d5ae5;
   box-shadow: none;
   cursor: pointer;
+  font-family: inherit;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -478,6 +473,7 @@ input::placeholder {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .subs-icon {
+  margin-left: 16px;
   fill: currentColor;
 }
 
