@@ -575,33 +575,27 @@ input::placeholder {
 .modal-input-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-bottom: 8px;
-}
-.modal-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }
 .modal-label {
   color:#8E8F99;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  margin-bottom: 8px;
 }
 .modal-input-svg-container {
   position: relative;
+  margin-bottom: 8px;
 }
-.modal-input-svg {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+.modal-input-svg-container:last-child {
+  margin-bottom: 0;
 }
+
 .modal-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
-  padding: 11px 38px;
+  padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   background-color: transparent;
@@ -610,15 +604,23 @@ input::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid #4d5ae5;
 }
 .modal-input-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-svg:hover,
 .modal-input-svg:focus {
-  fill: #ffffff;
+  fill: #4D5AE5;
 }
 .modal-input-svg-container:hover .modal-input-svg,
 .modal-input-svg-container:focus .modal-input-svg {
@@ -626,7 +628,6 @@ input::placeholder {
 }
 .modal-input-svg-container:hover .modal-input,
 .modal-input-svg-container:focus .modal-input {
-  border: 1px solid #4d5ae5;
 }
 .modal-item-textarea {
   margin-bottom: 16px;
