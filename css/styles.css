@@ -407,7 +407,7 @@ img {
 .footer-social {
   margin-right: 80px;
 }
-.subs-container {display: flex;
+.subs-container {
   margin-left: auto;
 }
 .subs-text {
@@ -421,7 +421,7 @@ img {
 .subs-form {
   display: flex;
   gap: 24px;
-  /* align-items: flex-end; */
+  align-items: flex-end;
 }
 .subs-input {
   width: 264px;
@@ -440,7 +440,7 @@ img {
   letter-spacing: 0.04em;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-.subs-label + .subs-input:focus {border: 1px solid #4D5AE5;
+.subs-label .subs-input:focus {border: 1px solid #4D5AE5;
 }
 input::placeholder {
   font-family: inherit;
@@ -499,7 +499,7 @@ input::placeholder {
 }
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   padding-top: 72px;
   padding-right: 24px;
   padding-bottom: 24px;
@@ -510,16 +510,35 @@ input::placeholder {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button-close:hover .icon-ellipse,
-.modal-button-close:focus .icon-ellipse {
-  fill: #404BBF;
-  stroke: none;
+.modal-button-close:hover,
+.modal-button-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button-close:hover .icon-close,
 .modal-button-close:focus .icon-close {
@@ -596,6 +615,10 @@ input::placeholder {
 .modal-input-svg {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input-svg:hover,
+.modal-input-svg:focus {
+  fill: #ffffff;
 }
 .modal-input-svg-container:hover .modal-input-svg,
 .modal-input-svg-container:focus .modal-input-svg {
@@ -713,3 +736,5 @@ background-color: #404BBF;
   line-height: 1.33;
   text-decoration-line: underline;
 }
+
+
