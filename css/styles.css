@@ -678,7 +678,9 @@ input[type="checkbox"]:checked + .modal-label-checkbox>.check-span {
   background-color: #4D5AE5;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.2, 0, 0.4, 1),
+  transition: 
+    background-color 250ms cubic-bezier(0.2, 0, 0.4, 1);
+  transition: 
     box-shadow 250ms cubic-bezier(0.2, 0, 0.4, 1);
 }
 .modal-send-button:hover,
