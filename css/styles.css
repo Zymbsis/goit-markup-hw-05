@@ -647,7 +647,7 @@ textarea::placeholder {
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-span:active {
+input[type="checkbox"]:checked + .modal-label-checkbox>.check-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
