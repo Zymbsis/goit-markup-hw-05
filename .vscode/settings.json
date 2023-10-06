@@ -6,7 +6,13 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "window.zoomLevel": 1,
-  "[html]": }{
+"prettier.printWidth": 120,
+"prettier.singleQuote": true,
+"editor.wordWrap": "on",
+"editor.wordWrapColumn": 60,
+"html.format.wrapAttributes": "force-aligned",
+"editor.formatOnSave": true}
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
